@@ -22,10 +22,6 @@ This branch contains some unit tests. Some notes on the test design:
 
 * The test names have two parts separated by an underscore. The first part is a summary of the scenario being tested, the second part is a summary of the expected outcome.
 
-* The tests use named constants that are not the same as the production code, so that they calculate values independently of the production code. This independence can help to find calculation bugs (at a cost of a small amount of duplication)
-
-* The test data uses names that are meaningful in the domain like BASE_PERCENTAGE which is easier to understand than "6.0"
-
 * The test code is divided with newlines into three sections corresponding to 'Arrange, Act, Assert'. This makes the test easier for the eye to follow and read.
 
 You may disagree with some or all of these design decisions and there are many other ways to solve this exercise. Hopefully working on this code will have provoked some useful discussions.
