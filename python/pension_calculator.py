@@ -33,7 +33,7 @@ class PensionContributionCalculator:
         elif tenure_years >= 5:
             tenure_bonus = percentages.lookup_value(SalaryContributionPercentages.medium_tenure_percentage)
 
-        # BUG: some of the seniority bonuses need adjusting - look in the relevant source files for them
+        # BUG: one of the seniority bonuses is wrong - look in the relevant classes to find it
         seniority_bonus = seniority.get_pension_contribution_bonus(percentages)
         total_contribution_percentage = (
                 percentages.lookup_value(SalaryContributionPercentages.base_contribution_rate)
@@ -41,6 +41,7 @@ class PensionContributionCalculator:
                 + seniority_bonus
         )
 
+        # BUG: should divide by 100 (not 10) to get a percentage of annual salary
         return (annual_salary * Decimal(total_contribution_percentage)).quantize(
             Decimal('0.01'), rounding=ROUND_HALF_UP
-        ) / Decimal(100)
+        ) / Decimal(10)

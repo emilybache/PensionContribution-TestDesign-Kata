@@ -26,7 +26,7 @@ def test_junior_employee_with_no_tenure_basic_contribution(fake_percentages):
         annual_salary, tenure, seniority, fake_percentages
     )
 
-    assert pytest.approx(actual_contribution, 0.001) == 3000.0
+    assert pytest.approx(float(actual_contribution), 0.001) == 3000.0
 
 def test_mid_level_recent_hire_medium_contribution(fake_percentages):
     annual_salary = Decimal(NORMAL_BASE_SALARY)
@@ -37,7 +37,7 @@ def test_mid_level_recent_hire_medium_contribution(fake_percentages):
         annual_salary, tenure, seniority, fake_percentages
     )
 
-    assert pytest.approx(actual_contribution, 0.001) == 4800.0
+    assert pytest.approx(float(actual_contribution), 0.001) == 4800.0
 
 def test_mid_level_medium_tenure_medium_large_contribution(fake_percentages):
     annual_salary = Decimal(NORMAL_BASE_SALARY)
@@ -48,7 +48,7 @@ def test_mid_level_medium_tenure_medium_large_contribution(fake_percentages):
         annual_salary, tenure, seniority, fake_percentages
     )
 
-    assert pytest.approx(actual_contribution, 0.001) == 6000.0
+    assert pytest.approx(float(actual_contribution), 0.001) == 6000.0
 
 def test_leadership_with_long_tenure_maximum_contribution(fake_percentages):
     annual_salary = Decimal(NORMAL_BASE_SALARY)
@@ -59,4 +59,4 @@ def test_leadership_with_long_tenure_maximum_contribution(fake_percentages):
         annual_salary, tenure, seniority, fake_percentages
     )
 
-    assert pytest.approx(actual_contribution, 0.001) == 6600.0
+    assert pytest.approx(float(actual_contribution), 0.001) == 6600.0
