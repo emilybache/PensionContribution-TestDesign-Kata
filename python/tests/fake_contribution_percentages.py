@@ -1,4 +1,4 @@
-from pension_calculator import SalaryContributionPercentages
+from data_access import SalaryContributionPercentages
 
 
 class FakePercentages(SalaryContributionPercentages):

@@ -1,3 +1,4 @@
+from domain import JuniorEmployee, LeadershipTeam, MidLevel
 from pension_calculator import *
 import pytest
 from decimal import Decimal
