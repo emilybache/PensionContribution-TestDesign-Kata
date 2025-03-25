@@ -1,5 +1,5 @@
-Sample Project
-==============
+Pension Contribution Test Design Kata - Python version
+======================================================
 
 For exercise instructions see (top level README)[../README.md]
 
