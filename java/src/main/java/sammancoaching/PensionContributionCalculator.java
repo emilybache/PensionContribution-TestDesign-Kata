@@ -34,10 +34,11 @@ public class PensionContributionCalculator {
             tenureBonus = percentages.lookupValue(SalaryContributionPercentages.MEDIUM_TENURE_PERCENTAGE);
         }
 
-        // BUG: some of the seniority bonuses need adjusting - look in the relevant source files for them
+        // BUG: one of the seniority bonuses is wrong - look in the relevant classes to find it
         double seniorityBonus = seniority.getPensionContributionBonus(percentages);
         double totalContributionPercentage = percentages.lookupValue(SalaryContributionPercentages.BASE_CONTRIBUTION_RATE) + tenureBonus + seniorityBonus;
 
+        // BUG: should divide by 100 (not 10) to get a percentage of annual salary
         return annualSalary
                 .multiply(BigDecimal.valueOf(totalContributionPercentage))
                 .divide(new BigDecimal("100"), RoundingMode.HALF_UP);
