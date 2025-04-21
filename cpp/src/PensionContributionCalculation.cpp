@@ -25,9 +25,9 @@ double PensionContributionCalculator::calculatePensionContribution(int employeeI
     return calculatePensionContribution(annualSalary, tenureYears, seniority, percentages);
 }
 
-double PensionContributionCalculator::calculatePensionContribution(double annualSalary,
-                                                                   int tenureYears,
-                                                                   SeniorityLevel *seniority,
+double PensionContributionCalculator::calculatePensionContribution(const double annualSalary,
+                                                                   const int tenureYears,
+                                                                   const SeniorityLevel *seniority,
                                                                    const SalaryContributionPercentages &percentages) {
     // BUG: Should throw an std::invalid_argument if annualSalary is zero or below.
 

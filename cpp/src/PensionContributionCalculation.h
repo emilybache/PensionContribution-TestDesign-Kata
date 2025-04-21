@@ -11,13 +11,13 @@ private:
     DatabaseAccess *databaseAccess;
 
 public:
-    PensionContributionCalculator(DatabaseAccess *databaseAccess);
+    explicit PensionContributionCalculator(DatabaseAccess *databaseAccess);
 
-    double calculatePensionContribution(int employeeId) const;
+    [[nodiscard]] double calculatePensionContribution(int employeeId) const;
 
     static double calculatePensionContribution(double annualSalary,
                                                int tenureYears,
-                                               SeniorityLevel *seniority,
+                                               const SeniorityLevel *seniority,
                                                const SalaryContributionPercentages &percentages);
 };
 
