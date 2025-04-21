@@ -1,7 +1,7 @@
 #ifndef SENIORITY_LEVEL_H
 #define SENIORITY_LEVEL_H
 
-#include "salary_contribution_percentages.h"
+#include "SalaryContributionPercentages.h"
 
 class SeniorityLevel {
 public:

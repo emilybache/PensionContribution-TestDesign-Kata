@@ -52,4 +52,3 @@ double PensionContributionCalculator::calculatePensionContribution(double annual
     return contribution;
 }
 
-}

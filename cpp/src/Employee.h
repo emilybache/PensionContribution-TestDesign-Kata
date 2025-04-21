@@ -1,7 +1,7 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
-#include "seniority_level.h"
+#include "SeniorityLevel.h"
 
 class Employee {
 private:

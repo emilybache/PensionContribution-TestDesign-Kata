@@ -18,6 +18,8 @@
  */
 class SalaryContributionPercentages {
 public:
+    virtual ~SalaryContributionPercentages() = default;
+
     static constexpr const char *NO_TENURE_PERCENTAGE = "NO_TENURE_PERCENTAGE";
     static constexpr const char *MEDIUM_TENURE_PERCENTAGE = "MEDIUM_TENURE_PERCENTAGE";
     static constexpr const char *LONG_TENURE_PERCENTAGE = "LONG_TENURE_PERCENTAGE";
@@ -29,10 +31,15 @@ private:
     DatabaseAccess *databaseAccess; // Dependency injected from outside.
 
 public:
-    SalaryContributionPercentages(DatabaseAccess *databaseAccess);
+    explicit SalaryContributionPercentages(DatabaseAccess *databaseAccess) : databaseAccess(databaseAccess) {
+    }
 
-    double lookupValue(const std::string &namedConstant) const;
+    virtual double lookupValue(const std::string &namedConstant) const;
 };
+
+inline double SalaryContributionPercentages::lookupValue(const std::string &namedConstant) const {
+    throw std::runtime_error("SalaryContributionPercentages::lookupValue can't be called from a unit test");
+}
 
 
 #endif // SALARY_CONTRIBUTION_PERCENTAGES_H

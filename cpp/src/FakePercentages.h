@@ -17,7 +17,7 @@ public:
 
     FakePercentages(const std::unordered_map<std::string, double> &salaryPercentages);
 
-    virtual double lookupValue(const std::string &namedConstant) const;
+    [[nodiscard]] double lookupValue(const std::string &namedConstant) const override;
 };
 
 
