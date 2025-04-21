@@ -2,7 +2,7 @@
 #include "catch2/catch.hpp"
 
 
-TEST_CASE ("Sample") {
+TEST_CASE ("Good Unit Test") {
     SECTION("sample section") {
         REQUIRE(true == false);
     }
