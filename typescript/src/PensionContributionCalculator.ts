@@ -20,10 +20,12 @@ export class PensionContributionCalculator {
 
   static calculatePensionContribution(annualSalary: number, tenureYears: number, seniority: SeniorityLevel, percentages: ContributionPercentages): number {
     // BUG: Should throw an Error if annualSalary is zero or below
-
+    if (annualSalary <= 0) {
+      throw new Error("Annual salary must be greater than zero.");
+    }
     let tenureBonus = percentages.lookupValue(SalaryContributionPercentages.NO_TENURE_PERCENTAGE);
     // BUG: Should be a long tenure bonus for 15 years or more
-    if (tenureYears >= 10) {
+    if (tenureYears >= 15) {
       tenureBonus = percentages.lookupValue(SalaryContributionPercentages.LONG_TENURE_PERCENTAGE);
     } else if (tenureYears >= 5) {
       tenureBonus = percentages.lookupValue(SalaryContributionPercentages.MEDIUM_TENURE_PERCENTAGE);
@@ -34,6 +36,6 @@ export class PensionContributionCalculator {
     const totalContributionPercentage = percentages.lookupValue(SalaryContributionPercentages.BASE_CONTRIBUTION_RATE) + tenureBonus + seniorityBonus;
 
     // BUG: should divide by 100 (not 10) to get a percentage of annual salary
-    return (annualSalary * totalContributionPercentage) / 10;
+    return (annualSalary * totalContributionPercentage) / 100;
   }
 }
