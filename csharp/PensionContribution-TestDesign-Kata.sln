@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PensionContributionCalculations", "PensionContributionCalculations\PensionContributionCalculations.csproj", "{DDAE0749-5206-4F05-A4F9-61BE0530C7D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PensionContributionCalculations.Test", "PensionContributionCalculations.Test\PensionContributionCalculations.Test.csproj", "{CED48FEE-3A3F-4DD5-9438-275597BF0896}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDAE0749-5206-4F05-A4F9-61BE0530C7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDAE0749-5206-4F05-A4F9-61BE0530C7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDAE0749-5206-4F05-A4F9-61BE0530C7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDAE0749-5206-4F05-A4F9-61BE0530C7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED48FEE-3A3F-4DD5-9438-275597BF0896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED48FEE-3A3F-4DD5-9438-275597BF0896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED48FEE-3A3F-4DD5-9438-275597BF0896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED48FEE-3A3F-4DD5-9438-275597BF0896}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
