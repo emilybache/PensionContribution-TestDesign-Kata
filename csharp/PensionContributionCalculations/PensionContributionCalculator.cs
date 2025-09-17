@@ -24,7 +24,7 @@ public class PensionContributionCalculator
         // BUG: Should throw an ArgumentException if annualSalary is zero or below
 
         double tenureBonus = percentages.LookupValue(SalaryContributionPercentages.NO_TENURE_PERCENTAGE);
-        // BUG: Should be a long tenure bonus for 15 years or more
+        // BUG: Should be a long tenure bonus for 15 years or more, not 10 years
         if (tenureYears >= 10)
         {
             tenureBonus = percentages.LookupValue(SalaryContributionPercentages.LONG_TENURE_PERCENTAGE);
