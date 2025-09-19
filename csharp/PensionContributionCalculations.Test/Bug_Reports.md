@@ -16,3 +16,7 @@ When calculating pension contributions, employees get an additional bonus if the
 Senior Leadership is unhappy with their compensation
 ----------------------------------------------------
 Managers get a more generous pension contribution than ordinary employees. Recently it was decided that the leadership team should be given an even larger pension contribution percentage, but they have complained that this hasn't shown up in their salary statements yet. We have added this higher level in the database, but they haven't received it. Leadership team members should receive a higher level of benefit than mid-level employees. 
+
+New compensation rules for Hourly wage employees
+------------------------------------------------
+Some employees are paid an hourly wage instead of an annual salary. The calculation currently doesn't include them, but we would like to change the rules and give them a pension contribution of half the usual base rate. These employees should not receive bonuses for tenure or seniority. We will need to add support for these employees both in the database and the calculation rules.
