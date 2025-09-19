@@ -7,11 +7,11 @@ We have an overnight batch job that calculates the pension contributions. It get
 
 Calculations are off by a wide margin
 -------------------------------------
-Pension contributions are expressed as a percentage of salary rather than an absolute amount. Unfortunately, the latest release seems to have a glitch that returns values that are way higher than expected. The values we are getting for these percentages generally seem to be ten times larger than they should be, sometimes even more than 100%. 
+Unfortunately, the latest release seems to have a glitch that returns values that are way higher than expected. The values we are getting for pension contributions generally seem to be ten times larger than they should be, sometimes even more than 100% of the annual salary. 
 
 Tenure is being interpreted too generously
 ------------------------------------------
-When calculating pension contributions, employees get an additional bonus if they have been with the company for a long time. The highest bonus level seems to be being given to employees with only ten years of tenure, which is too generous. The highest bonus should only be paid to those with more than 15 years of tenure.
+When calculating pension contributions, employees get an additional bonus if they have been with the company for a long time. The highest bonus level seems to be being given to employees with only ten years of tenure, which is too generous. The highest bonus should only be paid to those with 15 or more years of tenure.
 
 Senior Leadership is unhappy with their compensation
 ----------------------------------------------------
