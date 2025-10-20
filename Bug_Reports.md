@@ -1,13 +1,13 @@
 Current Issues
 ==============
 
-Salary Ranges with negative contributions
------------------------------------------
-We have an overnight batch job that calculates the pension contributions. It gets records from another system, but sometimes the other system has a glitch and supplies negative values for the annual salary for certain employees. The pension contribution system consequently calculates a negative contribution. It should instead reject the bad record.
-
 Calculations are off by a wide margin
 -------------------------------------
 Unfortunately, the latest release seems to have a glitch that returns values that are way higher than expected. The values we are getting for pension contributions generally seem to be ten times larger than they should be, sometimes even more than 100% of the annual salary. 
+
+Salary Ranges with negative contributions
+-----------------------------------------
+We have an overnight batch job that calculates the pension contributions. It gets records from another system, but sometimes the other system has a glitch and supplies negative values for the annual salary for certain employees. The pension contribution system consequently calculates a negative contribution. It should instead reject the bad record.
 
 Tenure is being interpreted too generously
 ------------------------------------------
