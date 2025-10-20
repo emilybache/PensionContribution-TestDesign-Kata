@@ -7,6 +7,14 @@ DO NOT WRITE THE TEST CODE YET, only comments. We want to be certain we have exp
 
 1. Paste the appropriate template into the "GoodUnitTest" class/module:
 
+```c++
+    SECTION("Below Zero Salary - Fails") {
+        // Irrelevant
+        // Initial state
+        // Action
+        // Outcome
+    }
+```
 
 ```csharp
    [TestCase]
@@ -29,12 +37,31 @@ DO NOT WRITE THE TEST CODE YET, only comments. We want to be certain we have exp
     }
 ```
 
+```kotlin
+    @Test
+    fun `Scenario Summary`() {
+        // Irrelevant
+        // Initial state
+        // Action
+        // Outcome
+    }
+```
+
 ```python
 def test_scenario_summary():
     # Irrelevant
     # Initial state
     # Action
     # Outcome
+```
+
+```typescript
+    test("Scenario Summary", () => {
+        // Irrelevant
+        // Initial state
+        // Action
+        // Outcome    
+  });
 ```
 
 2. Carefully read the code to understand the bug. Identify the desired outcome which does not happen because of the bug. In the comment under `Outcome` write a comment that specifies this desired outcome.
