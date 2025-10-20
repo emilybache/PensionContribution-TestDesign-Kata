@@ -11,5 +11,8 @@ When all the marked bugs are fixed, discuss:
 
 Sample solution
 ---------------
-
 The "sample_solution" branch shows one way to solve this exercise. We suggest you try it for yourself before looking at it. There is more information in the README file in that branch.
+
+Checklists
+----------
+This branch contains a variant of the exercise. The instructions are in a file 'Exercise_Instructions.md'.
