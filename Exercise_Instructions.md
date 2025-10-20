@@ -53,6 +53,7 @@ def test_scenario_summary():
     # Initial state
     # Action
     # Outcome
+    pass
 ```
 
 ```typescript
