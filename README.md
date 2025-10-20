@@ -15,4 +15,4 @@ The "sample_solution" branch shows one way to solve this exercise. We suggest yo
 
 Checklists
 ----------
-This branch contains a variant of the exercise. The instructions are in a file 'Exercise_Instructions.md'.
+This branch contains a variant of the exercise. The instructions are in a file [Exercise_Instructions.md](Exercise_Instructions.md)
