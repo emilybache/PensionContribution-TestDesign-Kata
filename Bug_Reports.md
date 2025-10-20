@@ -1,8 +1,8 @@
-Bug Reports
-===========
+Current Issues
+==============
 
-Salary Ranges are not checked properly
---------------------------------------
+Salary Ranges with negative contributions
+-----------------------------------------
 We have an overnight batch job that calculates the pension contributions. It gets records from another system, but sometimes the other system has a glitch and supplies negative values for the annual salary for certain employees. The pension contribution system consequently calculates a negative contribution. It should instead reject the bad record.
 
 Calculations are off by a wide margin
