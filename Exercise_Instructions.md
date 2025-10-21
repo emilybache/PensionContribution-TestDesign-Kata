@@ -1,14 +1,14 @@
 
 Part 1: Test names and intentions
 ==================================
-There are several bugs in the production code, and a document that describes them [Bug Reports](Bug_Reports.md). Write unit test skeletons for each one, following the checklist below. You may write as many tests for each bug as you think is needed.
+There are several bugs in the production code, and a document that describes them [Issues](Issues.md). Write unit test skeletons for each one, following the checklist below. You may write as many tests for each bug as you think is needed.
 
 DO NOT WRITE THE TEST CODE YET, only comments. We want to be certain we have expressed our intent in words before we begin writing code.
 
 1. Paste the appropriate template into the "GoodUnitTest" class/module:
 
 ```c++
-    SECTION("Below Zero Salary - Fails") {
+    SECTION("Scenario Summary") {
         // Irrelevant
         // Initial state
         // Action
