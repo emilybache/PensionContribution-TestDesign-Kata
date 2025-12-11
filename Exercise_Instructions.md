@@ -65,8 +65,8 @@ def test_scenario_summary():
   });
 ```
 
-2. Carefully read the code to understand the bug. Identify the desired outcome which does not happen because of the bug. In the comment under `Outcome` write a comment that specifies this desired outcome.
-3. Identify one specific input that would be needed to trigger the bug. In the comment under `Initial State` write a new comment that specifies this input.
+2. Carefully read the issue description. Identify the desired outcome which does not happen because of the bug. In the comment under `Outcome` write a comment that specifies this desired outcome.
+3. Identify one specific input that would be needed to trigger the issue. In the comment under `Initial State` write a new comment that specifies this input.
 4. Identify the action that would case the outcome given the specific condition and write it in a comment under `Action`.
 5. Do not add any comments under `Irrelevant`. We will use that in the next part.
 6. Summarize the whole test scenario in a few words and use it as the test name. This name should express what is unique about this particular test without going into a lot of details.
